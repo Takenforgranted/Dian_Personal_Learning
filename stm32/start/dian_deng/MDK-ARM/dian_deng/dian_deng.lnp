@@ -1,0 +1,24 @@
+--cpu Cortex-M3
+"dian_deng\startup_stm32f103xb.o"
+"dian_deng\main.o"
+"dian_deng\gpio.o"
+"dian_deng\stm32f1xx_it.o"
+"dian_deng\stm32f1xx_hal_msp.o"
+"dian_deng\stm32f1xx_hal_gpio_ex.o"
+"dian_deng\stm32f1xx_hal_tim.o"
+"dian_deng\stm32f1xx_hal_tim_ex.o"
+"dian_deng\stm32f1xx_hal.o"
+"dian_deng\stm32f1xx_hal_rcc.o"
+"dian_deng\stm32f1xx_hal_rcc_ex.o"
+"dian_deng\stm32f1xx_hal_gpio.o"
+"dian_deng\stm32f1xx_hal_dma.o"
+"dian_deng\stm32f1xx_hal_cortex.o"
+"dian_deng\stm32f1xx_hal_pwr.o"
+"dian_deng\stm32f1xx_hal_flash.o"
+"dian_deng\stm32f1xx_hal_flash_ex.o"
+"dian_deng\stm32f1xx_hal_exti.o"
+"dian_deng\system_stm32f1xx.o"
+--strict --scatter "dian_deng\dian_deng.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "dian_deng.map" -o dian_deng\dian_deng.axf

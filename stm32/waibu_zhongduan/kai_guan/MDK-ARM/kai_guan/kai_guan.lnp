@@ -1,0 +1,24 @@
+--cpu Cortex-M3
+"kai_guan\startup_stm32f103xb.o"
+"kai_guan\main.o"
+"kai_guan\gpio.o"
+"kai_guan\stm32f1xx_it.o"
+"kai_guan\stm32f1xx_hal_msp.o"
+"kai_guan\stm32f1xx_hal_gpio_ex.o"
+"kai_guan\stm32f1xx_hal_tim.o"
+"kai_guan\stm32f1xx_hal_tim_ex.o"
+"kai_guan\stm32f1xx_hal.o"
+"kai_guan\stm32f1xx_hal_rcc.o"
+"kai_guan\stm32f1xx_hal_rcc_ex.o"
+"kai_guan\stm32f1xx_hal_gpio.o"
+"kai_guan\stm32f1xx_hal_dma.o"
+"kai_guan\stm32f1xx_hal_cortex.o"
+"kai_guan\stm32f1xx_hal_pwr.o"
+"kai_guan\stm32f1xx_hal_flash.o"
+"kai_guan\stm32f1xx_hal_flash_ex.o"
+"kai_guan\stm32f1xx_hal_exti.o"
+"kai_guan\system_stm32f1xx.o"
+--strict --scatter "kai_guan\kai_guan.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "kai_guan.map" -o kai_guan\kai_guan.axf
